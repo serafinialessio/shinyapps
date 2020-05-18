@@ -1,6 +1,6 @@
-# Install shiny utils R version 3.6.0
+# Install shiny utils R version 3.6.3
 
-FROM rocker/shiny:3.6.0
+FROM rocker/shiny:3.6.3
 #MANTAINER "Alessio Serafini" srf.alessio@gmail.com
 
 # Install Ubuntu packages
@@ -37,6 +37,7 @@ RUN apt-get update && apt-get install -y \
 	libproj-dev \
 	libgeos-dev \
 	libudunits2-dev \
+	libnode-dev \
 	libcairo2-dev \
 	libnetcdf-dev \
 	lbzip2 \
@@ -49,6 +50,7 @@ RUN apt-get update && apt-get install -y \
 	libhdf4-alt-dev \
 	libhdf5-dev \
 	libjq-dev \
+	liblwgeom-dev \
 	libpq-dev \
 	libproj-dev \
 	libprotobuf-dev \
@@ -72,6 +74,7 @@ RUN apt-get update && apt-get install -y \
 	libhdf4-alt-dev \
 	libhdf5-dev \
 	libjq-dev \
+	liblwgeom-dev \
 	libpq-dev \
 	libproj-dev \
 	libprotobuf-dev \
@@ -99,6 +102,7 @@ RUN install2.r --error \
 	leafpop \
 	shinydashboard \
 	shinyjqui\
+	sortable\
 	shinyjs \
 	DT \
 	devtools\
@@ -109,6 +113,7 @@ RUN install2.r --error \
 	highcharter\
 	plotly\
 	kableExtra\
+	reactable\
 	shinyalert\
 	shinyWidgets\
 	shinydashboardPlus\
@@ -127,8 +132,9 @@ RUN install2.r --error \
 	mapdata \
 	maptools \
 	mapview \
+	mapdeck\
+	spatialwidget\
 	raster \
-	lwgeom \
     rgdal \
 	rgeos \
 	proj4 \
