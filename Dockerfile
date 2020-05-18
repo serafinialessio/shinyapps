@@ -1,6 +1,6 @@
-# Install shiny utils R version 3.5.0
+# Install shiny utils R version 3.5.3
 
-FROM rocker/shiny:3.5.0
+FROM rocker/shiny:3.5.3
 #MANTAINER "Alessio Serafini" srf.alessio@gmail.com
 
 # Install Ubuntu packages
@@ -96,12 +96,15 @@ RUN install2.r --error \
 	httpuv \
 	shiny \
 	leaflet\
+	leafpop \
 	shinydashboard \
 	shinyjs \
+	shinyjqui\
 	DT \
 	devtools\
 	magrittr\
 	leaflet.minicharts\
+	auth0\
 	leaflet.extras\
 	highcharter\
 	plotly\
@@ -117,6 +120,7 @@ RUN install2.r --error \
 	readxl\
 	devtools\
 	tmaptools\
+	leafem\
 	cartography\
 	RColorBrewer \
 	RandomFields \
