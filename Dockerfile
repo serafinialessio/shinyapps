@@ -1,6 +1,6 @@
-# Install shiny utils R version 3.5.3
+# Install shiny utils R version 3.6.0
 
-FROM rocker/shiny:3.5.3
+FROM rocker/shiny:3.6.0
 #MANTAINER "Alessio Serafini" srf.alessio@gmail.com
 
 # Install Ubuntu packages
@@ -98,8 +98,8 @@ RUN install2.r --error \
 	leaflet\
 	leafpop \
 	shinydashboard \
-	shinyjs \
 	shinyjqui\
+	shinyjs \
 	DT \
 	devtools\
 	magrittr\
