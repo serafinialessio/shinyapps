@@ -1,6 +1,6 @@
-# Install shiny utils R version 3.6.3
+# Install shiny utils R version 4.0.0
 
-FROM rocker/shiny:3.6.3
+FROM rocker/shiny:4.0.0
 #MANTAINER "Alessio Serafini" srf.alessio@gmail.com
 
 # Install Ubuntu packages
@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y \
 	libxml2-dev \
 	libxml2 \
 	libv8-dev \
+	libnode-dev \
 	libudunits2-dev \
 	git \
 	libfontconfig1-dev \
@@ -37,7 +38,6 @@ RUN apt-get update && apt-get install -y \
 	libproj-dev \
 	libgeos-dev \
 	libudunits2-dev \
-	libnode-dev \
 	libcairo2-dev \
 	libnetcdf-dev \
 	lbzip2 \
@@ -50,7 +50,6 @@ RUN apt-get update && apt-get install -y \
 	libhdf4-alt-dev \
 	libhdf5-dev \
 	libjq-dev \
-	liblwgeom-dev \
 	libpq-dev \
 	libproj-dev \
 	libprotobuf-dev \
@@ -74,7 +73,6 @@ RUN apt-get update && apt-get install -y \
 	libhdf4-alt-dev \
 	libhdf5-dev \
 	libjq-dev \
-	liblwgeom-dev \
 	libpq-dev \
 	libproj-dev \
 	libprotobuf-dev \
