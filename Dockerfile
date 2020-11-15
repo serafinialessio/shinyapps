@@ -1,6 +1,6 @@
-# Install shiny utils R version 4.0.0
+# Install shiny utils R version 4.0.3
 
-FROM rocker/shiny:4.0.0
+FROM rocker/shiny:4.0.3
 #MANTAINER "Alessio Serafini" srf.alessio@gmail.com
 
 # Install Ubuntu packages
